@@ -146,3 +146,38 @@ body {
 .nav-menu a:hover {
     color: #ffffff;
 }
+
+/* Responsive layout for smaller screens */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px auto;
+    }
+
+    .caption, .image-space {
+        flex: none;
+        max-width: 90%;
+        margin: 20px 0;
+    }
+    
+    .nav-menu {
+        text-align: center;
+    }
+}
+
+/* Adjust text size for better readability on smaller screens */
+@media only screen and (max-width: 480px) {
+    .caption h1 {
+        font-size: 28px;
+    }
+
+    .caption p, .nav-menu a {
+        font-size: 16px;
+    }
+    
+    .chrome-store-button, .beautiful-button, .back-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
