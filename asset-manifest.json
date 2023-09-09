@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/summerize-ai-website/static/css/main.5def4e94.css",
+    "main.js": "/summerize-ai-website/static/js/main.8d4eb73d.js",
+    "static/js/787.cda612ba.chunk.js": "/summerize-ai-website/static/js/787.cda612ba.chunk.js",
+    "static/media/kashyab.png": "/summerize-ai-website/static/media/kashyab.ff61c0598224b84f4855.png",
+    "static/media/summer-gif.gif": "/summerize-ai-website/static/media/summer-gif.a33cb51ae98458dfb40d.gif",
+    "static/media/summary.png": "/summerize-ai-website/static/media/summary.5edee214a26bc43feb77.png",
+    "static/media/keywords.png": "/summerize-ai-website/static/media/keywords.764c6bb56a6fb13fbdee.png",
+    "static/media/jagannath-ramesh.png": "/summerize-ai-website/static/media/jagannath-ramesh.39872736388bea22e837.png",
+    "static/media/chatgpt-logo-png.webp": "/summerize-ai-website/static/media/chatgpt-logo-png.0f7c327240f0217c8c42.webp",
+    "index.html": "/summerize-ai-website/index.html",
+    "main.5def4e94.css.map": "/summerize-ai-website/static/css/main.5def4e94.css.map",
+    "main.8d4eb73d.js.map": "/summerize-ai-website/static/js/main.8d4eb73d.js.map",
+    "787.cda612ba.chunk.js.map": "/summerize-ai-website/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5def4e94.css",
+    "static/js/main.8d4eb73d.js"
+  ]
+}
