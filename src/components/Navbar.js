@@ -192,7 +192,7 @@ const navListItems = [
 function NavList() {
   return (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
-      <NavListMenu />
+      
       {navListItems.map(({ label, icon }, key) => (
         <Typography
           key={label}
@@ -249,7 +249,7 @@ export function ComplexNavbar() {
         </IconButton>
         
         <ProfileMenu />
-        <Button className="bg-purple-400 mr-10">Get it! It's free!</Button>
+        <Button className="bg-purple-400 md:mr-10 mr-2 text-xs md:text-base">Get it! It's free!</Button>
       </div>
       <MobileNav open={isNavOpen} className="overflow-scroll">
         <NavList />

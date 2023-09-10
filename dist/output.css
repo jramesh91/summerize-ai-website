@@ -864,6 +864,11 @@ video {
   margin-right: 0px;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .-ml-1 {
   margin-left: -0.25rem;
 }
@@ -974,6 +979,10 @@ video {
 
 .mr-10 {
   margin-right: 2.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .box-border {
@@ -1107,6 +1116,10 @@ video {
 
 .h-80 {
   height: 20rem;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .max-h-96 {
@@ -1519,6 +1532,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .flex-wrap {
@@ -2638,6 +2655,11 @@ video {
 .py-0\.5 {
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .\!pr-7 {
@@ -4642,6 +4664,11 @@ code {
   background-color: rgb(171 71 188 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-purple-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 39 176 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-opacity-80:hover {
   --tw-bg-opacity: 0.8;
 }
@@ -6037,6 +6064,32 @@ code {
 }
 
 @media (min-width: 720px) {
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .md\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .md\:ml-16 {
+    margin-left: 4rem;
+  }
+
+  .md\:mr-10 {
+    margin-right: 2.5rem;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:w-2\/3 {
     width: 66.666667%;
   }
@@ -6051,6 +6104,14 @@ code {
 
   .md\:w-5\/6 {
     width: 83.333333%;
+  }
+
+  .md\:w-2\/5 {
+    width: 40%;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
   }
 
   .md\:min-w-\[60\%\] {
@@ -6083,6 +6144,44 @@ code {
 
   .md\:max-w-\[83\.333333\%\] {
     max-width: 83.333333%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .md\:pl-16 {
+    padding-left: 4rem;
+  }
+
+  .md\:pr-0 {
+    padding-right: 0px;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
