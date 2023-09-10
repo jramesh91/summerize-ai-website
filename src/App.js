@@ -1,16 +1,18 @@
+import React from 'react';
 import './App.css';
-
-//Components
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 import { ComplexNavbar } from './components/Navbar';
-
-//Pages
 import LandingPage from './pages/LandingPage';
+
+library.add(fab, fas);
 
 function App() {
   return (
     <div className="App">
       <ComplexNavbar />
-      <LandingPage/>
+      <LandingPage />
     </div>
   );
 }

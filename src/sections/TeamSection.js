@@ -6,6 +6,7 @@ import {
   Typography,
   Tooltip,
 } from "@material-tailwind/react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import FontAwesomeIcon
 
 import jagan from "../assets/images/jagannath-ramesh.png";
 import chatgpt from "../assets/images/chatgpt-logo-png.webp";
@@ -18,18 +19,24 @@ export function TeamSection() {
       alt: "profile-picture",
       name: "Jagan Ramesh",
       role: "Product",
+      linkedin: "https://www.linkedin.com/in/jagannath-ramesh/",
+      twitter: "https://twitter.com/JagannRamesh",
     },
     {
       imgSrc: kashyab,
       alt: "profile-picture",
       name: "Kashyab Murali",
       role: "Developer",
+      linkedin: "https://www.linkedin.com/in/kashyab-murali/",
+      twitter: "https://twitter.com/kashyab_19",
     },
     {
       imgSrc: chatgpt,
       alt: "profile-picture",
-      name: "Sekar",
+      name: "ChatGPT",
       role: "Everything Else",
+      linkedin: "https://www.linkedin.com/in/jagannath-ramesh/",
+      twitter: "https://twitter.com/JagannRamesh",
     },
   ];
 
@@ -49,37 +56,26 @@ export function TeamSection() {
             </Typography>
           </CardBody>
           <CardFooter className="flex justify-center gap-7 pt-2">
-            <Tooltip content="Like">
+            <Tooltip content="Connect on LinkedIn">
               <Typography
                 as="a"
-                href="#facebook"
+                href={profile.linkedin}
                 variant="lead"
                 color="blue"
                 textGradient
               >
-                <i className="fab fa-facebook" />
+                <FontAwesomeIcon icon={['fab', 'linkedin']} />
               </Typography>
             </Tooltip>
-            <Tooltip content="Follow">
+            <Tooltip content="Follow on Twitter">
               <Typography
                 as="a"
-                href="#twitter"
+                href={profile.twitter}
                 variant="lead"
                 color="light-blue"
                 textGradient
               >
-                <i className="fab fa-twitter" />
-              </Typography>
-            </Tooltip>
-            <Tooltip content="Follow">
-              <Typography
-                as="a"
-                href="#instagram"
-                variant="lead"
-                color="purple"
-                textGradient
-              >
-                <i className="fab fa-instagram" />
+                <FontAwesomeIcon icon={['fab', 'twitter']} />
               </Typography>
             </Tooltip>
           </CardFooter>

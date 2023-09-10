@@ -10,10 +10,10 @@ const HowItWorksSection = () => {
           {/* Content on the left */}
           <div className="w-full md:w-3/5 md:pr-0 flex flex-col justify-center items-center text-center mb-10 md:mb-0">
             <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800 mb-4 leading-snug">
-              Generate Concise Summaries with a click
+            Get 1% better everyday with less reading
             </h1>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg text-center">
-              Elevate your leisure reading with AI-powered highlights...
+            Elevate your leisure reading with AI-powered highlights. Delve into blogs, memoirs, and narratives, and grasp the essence in moments with smart summaries.
             </p>
             <div className="flex space-x-4 mt-4">
               <Chip color="indigo" value="Blogs" />
@@ -44,9 +44,9 @@ const HowItWorksSection = () => {
 
           {/* Content on the right */}
           <div className="w-full md:w-3/5 md:pl-16 flex flex-col justify-center items-center text-center">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800 mb-4 leading-snug"> {" "} ... even keywords and highlights</h1>
+          <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800 mb-4 leading-snug"> {" "} Distraction free learning in 10 seconds</h1>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg text-center">
-              Unlock academic mastery with AI-driven summaries...
+            Unlock academic mastery with AI-driven summaries and keywords. Transform complex research, journals, and theses into digestible insights for optimal learning.
             </p>
             <div className="flex space-x-4 mt-4 mb-8 md:mb-0">
               <Chip color="indigo" value="Journals" />

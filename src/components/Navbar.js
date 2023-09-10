@@ -249,7 +249,7 @@ export function ComplexNavbar() {
         </IconButton>
         
         <ProfileMenu />
-        <Button className="bg-purple-400 md:mr-10 mr-2 text-xs md:text-base">Get it! It's free!</Button>
+        <Button className="bg-purple-400 md:mr-10 mr-2 text-xs md:text-base">Download Now. It's free!</Button>
       </div>
       <MobileNav open={isNavOpen} className="overflow-scroll">
         <NavList />
