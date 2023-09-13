@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bf71c4fc.css",
-    "main.js": "/static/js/main.bff8907f.js",
+    "main.css": "/static/css/main.462a3931.css",
+    "main.js": "/static/js/main.c5b5d560.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
     "static/media/jagannath-ramesh.png": "/static/media/jagannath-ramesh.7d68df81c0276fecff9c.png",
     "static/media/kashyab.png": "/static/media/kashyab.ff61c0598224b84f4855.png",
@@ -10,12 +10,12 @@
     "static/media/keywords.png": "/static/media/keywords.764c6bb56a6fb13fbdee.png",
     "static/media/chatgpt-logo-png.webp": "/static/media/chatgpt-logo-png.0f7c327240f0217c8c42.webp",
     "index.html": "/index.html",
-    "main.bf71c4fc.css.map": "/static/css/main.bf71c4fc.css.map",
-    "main.bff8907f.js.map": "/static/js/main.bff8907f.js.map",
+    "main.462a3931.css.map": "/static/css/main.462a3931.css.map",
+    "main.c5b5d560.js.map": "/static/js/main.c5b5d560.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf71c4fc.css",
-    "static/js/main.bff8907f.js"
+    "static/css/main.462a3931.css",
+    "static/js/main.c5b5d560.js"
   ]
 }
