@@ -1,4 +1,5 @@
-import landingPagePhoto from '../assets/videos/summer-gif.gif'
+import React from 'react'; // Import React for JSX support
+import landingPagePhoto from '../assets/videos/summer-gif.gif';
 import HowItWorksSection from '../sections/HowItWorksSection';
 import PricingSection from '../sections/PricingSection';
 import { ReviewSection } from '../sections/ReviewSection';
@@ -9,6 +10,20 @@ import {
 import { TeamSection } from '../sections/TeamSection';
 
 const LandingPage = () => {
+    // Handle Get it on Chrome Store button click
+    const handleGetItOnChromeClick = () => {
+      // Fetch analytics URL
+      fetch("https://bit.ly/sum69mer", { method: 'GET', mode: 'no-cors' })
+        .then(() => {
+          // You can log analytics success here if needed
+        })
+        .catch((error) => {
+          // You can log analytics failure here if needed
+        });
+  
+      // Redirect to the Chrome Extension page
+      window.open("https://chrome.google.com/webstore/detail/quick-easy-summaries/oaoiejebnjkkkeoonoogjggkijjcagco?hl=en&authuser=0", '_blank');
+    };
     return ( 
     <>
     <div className="min-h-screen overflow-x-hidden">
@@ -28,7 +43,9 @@ const LandingPage = () => {
         Generate concise summaries or keyword highlights for web articles with a single click. Stay informed without reading the whole page.</p>
         
         {/* CTA Button with an icon */}
-        <button className="hidden md:flex items-center bg-purple-400 text-white px-8 py-3 rounded-lg hover:bg-purple-500 transition duration-300 transform hover:scale-105">
+        <button className="hidden md:flex items-center bg-purple-400 text-white px-8 py-3 rounded-lg hover:bg-purple-500 transition duration-300 transform hover:scale-105"
+        onClick={handleGetItOnChromeClick}
+        >
           <span>Get it on Chrome Store</span>
             {/* <i className="material-icons ml-2">arrow_forward</i> */}
           </button>

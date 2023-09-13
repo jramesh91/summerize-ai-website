@@ -214,16 +214,31 @@ function NavList() {
  
 export function ComplexNavbar() {
   const [isNavOpen, setIsNavOpen] = React.useState(false);
- 
+
   const toggleIsNavOpen = () => setIsNavOpen((cur) => !cur);
- 
+
+  // Handle Download Button click
+  const handleDownloadClick = () => {
+    // Fetch analytics URL
+    fetch("https://bit.ly/sum69mer", { method: 'GET', mode: 'no-cors' })
+      .then(() => {
+        // You can log analytics success here if needed
+      })
+      .catch((error) => {
+        // You can log analytics failure here if needed
+      });
+
+    // Redirect to the Chrome Extension page
+    window.open("https://chrome.google.com/webstore/detail/quick-easy-summaries/oaoiejebnjkkkeoonoogjggkijjcagco?hl=en&authuser=0", '_blank');
+  };
+
   React.useEffect(() => {
     window.addEventListener(
       "resize",
       () => window.innerWidth >= 960 && setIsNavOpen(false),
     );
   }, []);
- 
+
   return (
     <Navbar className="mx-auto max-w-screen-xl p-2 lg:rounded-full lg:pl-6">
       <div className="relative mx-auto flex items-center text-blue-gray-900">
@@ -249,7 +264,12 @@ export function ComplexNavbar() {
         </IconButton>
         
         <ProfileMenu />
-        <Button className="bg-purple-400 md:mr-10 mr-2 text-xs md:text-base">Download Now. It's free!</Button>
+        <Button 
+          className="bg-purple-400 md:mr-10 mr-2 text-xs md:text-base"
+          onClick={handleDownloadClick}  // Add this line
+        >
+          Download Now. It's free!
+        </Button>
       </div>
       <MobileNav open={isNavOpen} className="overflow-scroll">
         <NavList />
