@@ -1,4 +1,4 @@
-import React from 'react'; // Import React for JSX support
+import React, { useRef } from 'react'; // Import React for JSX support
 import landingPagePhoto from '../assets/videos/summer-gif.gif';
 import HowItWorksSection from '../sections/HowItWorksSection';
 import PricingSection from '../sections/PricingSection';
@@ -26,7 +26,11 @@ function Footer() {
 
 
 const LandingPage = () => {
+  const reviewSection = useRef(null);
+  const pricingSection = useRef(null);
+  const teamSection = useRef(null);
 
+   
   // Handle Get it on Chrome Store button click
   const handleGetItOnChromeClick = () => {
     // Fetch analytics URL
@@ -55,7 +59,7 @@ const LandingPage = () => {
 
           {/* Content */}
           <div className="flex flex-col justify-center items-center text-center w-full md:w-3/5 md:pl-16">
-            <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800 mb-4 leading-snug">The Chrome plugin you didn't know you needed</h1>
+            <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800 mb-4 leading-snug">The Chrome Extension you didn't know you needed</h1>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg text-center">
               Generate concise summaries or keyword highlights for web articles with a single click. Stay informed without reading the whole page.</p>
 
@@ -76,13 +80,13 @@ const LandingPage = () => {
         </section>
 
         {/* Pricing Section */}
-        <section className="container mx-auto my-10 px-4">
+        <section id = "pricing-section" ref = {pricingSection} className="container mx-auto my-10 px-4">
           <Typography variant="h1">Pricing</Typography>
           <PricingSection />
         </section>
 
         {/* Team Section */}
-        <section className="container mx-auto my-10 px-4">
+        <section id = "team-section" ref = {teamSection} className="container mx-auto my-10 px-4">
           <Typography variant="h1">Team</Typography>
           <TeamSection />
         </section>

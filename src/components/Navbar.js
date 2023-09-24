@@ -192,8 +192,21 @@ const navListItems = [
 function NavList() {
   return (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
-      
-      {navListItems.map(({ label, icon }, key) => (
+      {/* <a href="#reviews-section">Reviews</a>  */}
+      <a 
+        href="#pricing-section" 
+        className="text-lg font-medium text-gray-700 transition duration-200 px-4 py-2"
+    >
+        Pricing
+    </a>
+    
+    <a 
+        href="#team-section" 
+        className="text-lg font-medium text-gray-700 transition duration-200 px-4 py-2"
+    >
+        Team
+    </a>
+      {/* {navListItems.map(({ label, icon }, key) => (
         <Typography
           key={label}
           as="a"
@@ -207,7 +220,7 @@ function NavList() {
             {label}
           </MenuItem>
         </Typography>
-      ))}
+      ))} */}
     </ul>
   );
 }
