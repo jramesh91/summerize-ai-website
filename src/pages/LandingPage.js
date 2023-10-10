@@ -10,6 +10,8 @@ import {
 import { TeamSection } from '../sections/TeamSection';
 
 // Footer component
+import { Link } from 'react-router-dom';
+
 function Footer() {
   return (
     <footer className="bg-gray-800 text-white py-8 px-4">
@@ -18,11 +20,15 @@ function Footer() {
           <Typography variant="h5">© 2023 by summerize.ai</Typography>
         </div>
         <div className="flex space-x-4">
+          <Link to="/privacy-policy" className="hover:underline">Privacy Policy</Link>
+          {/* Add more links if necessary */}
         </div>
       </div>
     </footer>
   );
 }
+
+
 
 
 const LandingPage = () => {
