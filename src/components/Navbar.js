@@ -278,7 +278,7 @@ export function ComplexNavbar() {
         
         <ProfileMenu />
         <Button 
-          className="bg-purple-400 md:mr-10 mr-2 text-xs md:text-base"
+          className="bg-purple-500 md:mr-10 mr-2 text-xs md:text-base"
           onClick={handleDownloadClick}  // Add this line
         >
           Download Now. It's free!

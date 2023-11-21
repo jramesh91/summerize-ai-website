@@ -15,3 +15,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@keyframes slide-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-10%); }
+}
+
+@keyframes slide-right {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(10%); }
+}
+
+.animate-slide-left {
+  animation: slide-left 30s infinite alternate;
+}
+
+.animate-slide-right {
+  animation: slide-right 30s infinite alternate;
+}
+
+.video-container {
+  width: 50vw;
+  height: 35vw;  /* maintain a 16:9 ratio for widescreen videos */
+}
+
+.left-section, .right-section {
+  background: transparent;
+}
+
+.content-section {
+  background: rgba(255, 255, 255, 0.8); /* white with 80% opacity */
+}
+

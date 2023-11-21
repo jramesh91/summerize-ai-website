@@ -7,6 +7,7 @@ import { Typography } from "@material-tailwind/react";
 import { TeamSection } from '../sections/TeamSection';
 import { Link } from 'react-router-dom';
 
+
 const LandingPage = () => {
   const reviewSection = useRef(null);
   const pricingSection = useRef(null);
@@ -15,21 +16,22 @@ const LandingPage = () => {
   // For dynamic content animation
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const contentTypes = [
-    "webpages", 
-    "articles", 
-    "blogs", 
-    "PDFs", 
-    "white papers", 
-    "research journals", 
-    "news stories", 
-    "e-books", 
-    "reports", 
-    "brand websites", 
-    "product descriptions", 
-    "reviews", 
-    "case studies", 
-    "interview transcripts", 
-    "forums & discussions"
+    "webpage", 
+    "Youtube video",
+    "article", 
+    "blog", 
+    "PDF", 
+    "white paper", 
+    "research journal", 
+    "news story", 
+    "e-book", 
+    "report", 
+    "brand website", 
+    "product description", 
+    "review", 
+    "case studie", 
+    "interview transcript", 
+    "forums & discussion"
   ];
   
 
@@ -54,14 +56,14 @@ const LandingPage = () => {
       <div className="min-h-screen overflow-x-hidden">
         <section className="container mx-auto p-4 py-10 md:py-20 md:px-4 flex flex-col-reverse md:flex-row">
           <div className="flex items-center mb-8 md:mb-0 w-full md:w-2/5">
-            <img src={landingPagePhoto} alt="Healthcare Image" className="rounded-lg shadow-xl mx-auto md:mx-0 w-full" />
+             <img src={landingPagePhoto} alt="Healthcare Image" className="rounded-lg shadow-xl mx-auto md:mx-0 w-full" />
           </div>
           <div className="flex flex-col justify-center items-center text-center w-full md:w-3/5 md:pl-16">
             <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800 mb-2 leading-snug">
               Summerize any
             </h1>
             <div
-              className="text-4xl md:text-6xl font-extrabold text-purple-500 mb-4 leading-snug"
+              className="text-4xl md:text-6xl font-extrabold text-purple-600 mb-4 leading-snug"
               style={{ animation: 'fadeInOut 2s infinite' }}
             >
               {contentTypes[currentTextIndex]}
@@ -70,7 +72,7 @@ const LandingPage = () => {
               Generate concise summaries or keywords with a single click. Stay informed with less reading.
             </p>
             <button 
-              className="hidden md:flex items-center bg-purple-400 text-white px-8 py-3 rounded-lg hover:bg-purple-500 transition duration-300 transform hover:scale-105"
+              className="hidden md:flex items-center bg-purple-500 text-white px-8 py-3 rounded-lg hover:bg-purple-600 transition duration-300 transform hover:scale-105"
               onClick={handleGetItOnChromeClick}
             >
               Get it on Chrome Store

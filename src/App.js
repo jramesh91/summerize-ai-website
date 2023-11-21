@@ -6,6 +6,7 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import { ComplexNavbar } from "./components/Navbar";
 import LandingPage from "./pages/LandingPage";
 import PrivacyPolicy from './pages/PrivacyPolicy'; 
+import WelcomePage from './pages/Welcome'; 
 import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
@@ -25,13 +26,14 @@ function App() {
           />
           <meta
             name="keywords"
-            content="chrome extension, summerizer, AI summarizer, article summary, research paper summary, web page summarizer, SummarizeIt, NLP, browser extension"
+            content="chrome extension, summarize, AI, youtube summary, article summary, research paper summary, web page summarizer, SummarizeIt, NLP, browser extension"
           />
         </Helmet>
         <ComplexNavbar />
         <Routes>
         <Route path="/" element={<LandingPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/welcome" element={<WelcomePage />} />
           {/* Add other routes as necessary */}
         </Routes>
       </div>
