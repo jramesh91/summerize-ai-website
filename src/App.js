@@ -10,6 +10,7 @@ import WelcomePage from './pages/Welcome';
 import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
+import WhatsNew from "./pages/WhatsNew";
 
 
 library.add(fab, fas);
@@ -34,6 +35,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/welcome" element={<WelcomePage />} />
+          <Route path="/whatsnew" element={<WhatsNew />} />
           {/* Add other routes as necessary */}
         </Routes>
       </div>
