@@ -32,18 +32,20 @@ function UninstallFeedbackForm() {
             body: JSON.stringify(formData),
         });
 
-        if (response.ok) {
-            console.log('Feedback submitted successfully');
-            // Handle successful submission
-        } else {
-            console.error('Failed to submit feedback');
-            // Handle failed submission
-        }
+      if (response.ok) {
+        console.log('Feedback submitted successfully');
+        setDialogMessage("Thank you!"); // Set the thank you message
+        setShowDialog(true); // Show the dialog
+      } else {
+        console.error('Failed to submit feedback');
+        setDialogMessage("Failed to submit feedback, please try again."); // Set error message
+        setShowDialog(true); // Show the dialog
+      }
     } catch (error) {
-        console.error('Error submitting feedback:', error);
-        // Handle error
+      console.error('Error submitting feedback:', error);
+      setDialogMessage("An error occurred, please try again."); // Set error message
+      setShowDialog(true); // Show the dialog
     }
-
   };
   return (
     
@@ -70,7 +72,7 @@ function UninstallFeedbackForm() {
               color="lightGray"
               size="lg"
               outline={true}
-              placeholder="Please share where you feel unsatisfied"
+              placeholder="Please tell us how we can improve"
               className="text-lg"
               value={feedback}
               onChange={(e) => setFeedback(e.target.value)}
@@ -78,7 +80,7 @@ function UninstallFeedbackForm() {
           </div>
 
           <p className="text-base text-lg font-semibold mb-6 text-gray-600">
-            Leave your email to hear from us
+            We hope to stay in touch and share updates
           </p>
 
           <div className="mb-10">

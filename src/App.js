@@ -37,7 +37,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/welcome" element={<WelcomePage />} />
           <Route path="/whatsnew" element={<WhatsNew />} />
-          <Route path="/uninstall" element={<UninstallFeedbackForm/>} />
+          <Route path="/sad-day-for-us" element={<UninstallFeedbackForm/>} />
           {/* Add other routes as necessary */}
         </Routes>
       </div>
