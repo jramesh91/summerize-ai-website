@@ -11,6 +11,7 @@ import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
 import WhatsNew from "./pages/WhatsNew";
+import UninstallFeedbackForm from "./pages/UninstallFeedbackForm";
 
 
 library.add(fab, fas);
@@ -36,6 +37,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/welcome" element={<WelcomePage />} />
           <Route path="/whatsnew" element={<WhatsNew />} />
+          <Route path="/uninstall" element={<UninstallFeedbackForm/>} />
           {/* Add other routes as necessary */}
         </Routes>
       </div>
