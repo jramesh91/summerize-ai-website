@@ -1,38 +1,59 @@
 import { React, useState } from "react";
 import { Input, Button } from "@material-tailwind/react";
+import { DialogOverlay } from "../components/DialogOverlay";
 
 function UninstallFeedbackForm() {
   const [feedback, setFeedback] = useState("");
   const [email, setEmail] = useState("");
+  const [showDialog, setShowDialog] = useState(false);
+  const [dialogMessage, setDialogMessage] = useState('');
+
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const formData = { feedback, email };
+    const formData = {
+        records: [
+            {
+                fields: {
+                    Feedback: feedback,
+                    Email: email,
+                },
+            },
+        ],
+    };
 
-    console.log(formData);
+    try {
+        const response = await fetch(`https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE_ID}/${process.env.REACT_APP_AIRTABLE_TABLE_NAME}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_API_KEY}`,
+            },
+            body: JSON.stringify(formData),
+        });
 
-    console.log(formData);
-    const response = await fetch("/api/submitFeedback", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
-
-    if (response.ok) {
-      console.log("Feedback submitted");
-      // Reset the form or navigate the user to a thank you page
-    } else {
-      console.error("Failed to submit feedback");
-      // Inform the user that the submission failed
+        if (response.ok) {
+            console.log('Feedback submitted successfully');
+            // Handle successful submission
+        } else {
+            console.error('Failed to submit feedback');
+            // Handle failed submission
+        }
+    } catch (error) {
+        console.error('Error submitting feedback:', error);
+        // Handle error
     }
+
   };
   return (
+    
     <form
       onSubmit={handleSubmit}
       className="flex justify-center items-center p-4 min-h-screen bg-gradient-to-r from-purple-400 to-yellow-500 via-pink-400"
     >
+        {/* ... existing form code ... */}
+        {showDialog && <DialogOverlay onClose={() => setShowDialog(false)} message={dialogMessage} />}
+        
       <div className="bg-white p-12 rounded-lg shadow-2xl max-w-lg mx-auto my-10">
         <h2 className="text-3xl font-bold mb-6 text-gray-700 text-center">
           We are sorry to see you go 😔
