@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardBody, Typography, Input, List, ListItem } from '@material-tailwind/react';
+import { Card, CardBody, Typography, List, ListItem } from '@material-tailwind/react';
 
 const releaseNotes = [
   {

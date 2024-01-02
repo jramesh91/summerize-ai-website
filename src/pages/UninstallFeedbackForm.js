@@ -34,8 +34,10 @@ function UninstallFeedbackForm() {
 
       if (response.ok) {
         console.log('Feedback submitted successfully');
-        setDialogMessage("Thank you!"); // Set the thank you message
+        setDialogMessage("Thank you, your feedback has been submitted!"); // Set the thank you message
         setShowDialog(true); // Show the dialog
+        setFeedback(""); // Reset feedback
+        setEmail(""); 
       } else {
         console.error('Failed to submit feedback');
         setDialogMessage("Failed to submit feedback, please try again."); // Set error message
