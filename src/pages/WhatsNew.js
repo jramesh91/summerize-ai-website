@@ -3,6 +3,11 @@ import { Card, CardBody, Typography, Input, List, ListItem } from '@material-tai
 
 const releaseNotes = [
   {
+    version: 'Version 1.31',
+    date: '2024-01-01',
+    details: 'We have made improvements in how we welcome new users, Migrated to Assistant API for new use cases and improved usability, Easy summaries on Google Docs (public only)'
+  },
+  {
     version: 'Version 1.30',
     date: '2023-12-25',
     details: 'Audio mode, Upgraded to the latest GPT4 model for precise summaries, Performance improvements'
