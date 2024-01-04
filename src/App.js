@@ -12,6 +12,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
 import WhatsNew from "./pages/WhatsNew";
 import UninstallFeedbackForm from "./pages/UninstallFeedbackForm";
+import { Analytics } from '@vercel/analytics/react';
+
 
 
 library.add(fab, fas);
@@ -19,6 +21,7 @@ library.add(fab, fas);
 function App() {
   return (
     <Router>
+      <Analytics />
       <div className="App">
         <Helmet>
           <title>summerize.ai</title>
