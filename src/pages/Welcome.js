@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
 const WelcomePage = () => {
-  const [activeTab, setActiveTab] = useState('Welcome'); // This state will determine the active tab
+  // eslint-disable-next-line no-unused-vars
+  const [activeTab, setActiveTab] = useState('Welcome');
 
   return (
     <div className="min-h-screen flex justify-center items-center bg-white">
