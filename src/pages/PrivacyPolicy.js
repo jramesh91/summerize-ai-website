@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
     <div className="min-h-screen overflow-x-hidden">
       <section className="container mx-auto p-4 py-10">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Privacy Policy</h1>
-        <div className="text-lg text-gray-600 leading-relaxed mb-4 text-left">
+        <div className="text-lg text-white leading-relaxed mb-4 text-left">
     <h1 className="text-2xl font-bold mb-4">Privacy Policy of Summerize AI Chrome Extension</h1>
     <p><strong>Effective date:</strong> October 9, 2023</p>
 

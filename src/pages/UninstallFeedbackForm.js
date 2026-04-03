@@ -63,7 +63,7 @@ function UninstallFeedbackForm() {
           We are sorry to see you go 😔
         </h2>
         <div className="text-left">
-          <p className="text-base text-lg font-semibold mb-6 text-gray-600">
+          <p className="text-base text-lg font-semibold mb-6 text-white">
             Before you leave, we hope you've had the chance to explore all the
             amazing features our app can do for you.
           </p>
@@ -81,7 +81,7 @@ function UninstallFeedbackForm() {
             />
           </div>
 
-          <p className="text-base text-lg font-semibold mb-6 text-gray-600">
+          <p className="text-base text-lg font-semibold mb-6 text-white">
             We hope to stay in touch and share updates
           </p>
 

@@ -1,63 +1,91 @@
-import keywords from "../assets/images/keywords.png";
-import { Chip } from "@material-tailwind/react";
-import summary from "../assets/images/summary.png";
+const steps = [
+  {
+    number: "01",
+    title: "Open any article, paper, or page",
+    description:
+      "Works on blog posts, research papers, news articles, PDFs — anywhere you browse. No copy-paste required.",
+  },
+  {
+    number: "02",
+    title: "Summerize scans it in ~3 seconds",
+    description:
+      "The extension reads the full content and extracts what actually matters — the argument, the verdict, the signal.",
+  },
+  {
+    number: "03",
+    title: "You decide — read it or skip it",
+    description:
+      "No regret either way. If it's worth your time, you'll know why. If not, you saved 8 minutes. That adds up.",
+  },
+];
+
+const CHROME_STORE_URL =
+  "https://chrome.google.com/webstore/detail/quick-easy-summaries/oaoiejebnjkkkeoonoogjggkijjcagco?hl=en&authuser=0";
+
 const HowItWorksSection = () => {
   return (
-    <>
-      <div className="min-h-screen overflow-x-hidden">
-        {/* Summary Section */}
-        <section className="container mx-auto py-10 md:py-20 px-4 flex flex-col md:flex-row">
-          {/* Content on the left */}
-          <div className="w-full md:w-3/5 md:pr-0 flex flex-col justify-center items-center text-center mb-10 md:mb-0">
-            <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800 mb-4 leading-snug">
-            Get 1% better everyday with less reading
-            </h1>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg text-center">
-            Elevate your leisure reading with AI-powered highlights. Delve into blogs, memoirs, and narratives, and grasp the essence in moments with smart summaries.
-            </p>
-            <div className="flex space-x-4 mt-4">
-              <Chip color="indigo" value="Blogs" />
-              <Chip color="purple" value="News" />
-              <Chip color="teal" value="Guides" />
-              <Chip color="cyan" value="Magazines" />
-            </div>
-          </div>
-          {/* Image on the right */}
-          <div className="w-full md:w-2/5 flex justify-center items-center md:ml-16">
-            <img
-              src={summary}
-              alt="Summary Image"
-              className="rounded-lg shadow-xl max-w-full h-auto"
-            />
-          </div>
-        </section>
-
-        <section className="container mx-auto py-10 md:py-20 px-4 flex flex-col-reverse md:flex-row">
-          {/* Image on the left */}
-          <div className="w-full md:w-2/5 flex justify-center items-center mb-10 md:mb-0">
-            <img
-              src={keywords}
-              alt="Keywords Image"
-              className="rounded-lg shadow-xl max-w-full h-auto"
-            />
-          </div>
-
-          {/* Content on the right */}
-          <div className="w-full md:w-3/5 md:pl-16 flex flex-col justify-center items-center text-center">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800 mb-4 leading-snug"> {" "} Distraction free learning in 10 seconds</h1>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg text-center">
-            Unlock academic mastery with AI-driven summaries and keywords. Transform complex research, journals, and theses into digestible insights for optimal learning.
-            </p>
-            <div className="flex space-x-4 mt-4 mb-8 md:mb-0">
-              <Chip color="indigo" value="Journals" />
-              <Chip color="purple" value="Reports" />
-              <Chip color="teal" value="Essays" />
-              <Chip color="cyan" value="Op-Eds" />
-            </div>
-          </div>
-        </section>
+    <div className="max-w-6xl mx-auto">
+      <div className="text-center mb-14">
+        <p className="text-xs text-purple-400 uppercase tracking-widest font-medium mb-3">
+          How It Works
+        </p>
+        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+          Three seconds to a{" "}
+          <span className="bg-gradient-to-r from-purple-400 to-violet-300 bg-clip-text text-transparent">
+            better decision
+          </span>
+        </h2>
+        <p className="text-white max-w-xl mx-auto text-base">
+          Summerize works before you read — not after. That's what makes it different.
+        </p>
       </div>
-    </>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        {steps.map((step, i) => (
+          <div
+            key={i}
+            className="group relative bg-white/[0.03] hover:bg-white/[0.05] border border-white/[0.07] hover:border-purple-500/30 rounded-2xl p-8 transition-all duration-300"
+          >
+            {i < steps.length - 1 && (
+              <div className="hidden md:block absolute top-12 -right-3 w-6 h-px bg-gradient-to-r from-purple-500/40 to-transparent z-10" />
+            )}
+            <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-purple-600/20 border border-purple-500/30 text-purple-400 text-sm font-bold mb-5">
+              {step.number}
+            </div>
+            <h3 className="text-white font-semibold text-lg mb-3 leading-snug">
+              {step.title}
+            </h3>
+            <p className="text-white text-sm leading-relaxed">
+              {step.description}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <div className="text-center">
+        <a
+          href={CHROME_STORE_URL}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-500 text-white px-7 py-3.5 rounded-full font-semibold transition-all hover:scale-105 shadow-lg shadow-purple-900/40 text-base"
+        >
+          See it in action — Add to Chrome
+          <svg
+            className="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
   );
 };
 
