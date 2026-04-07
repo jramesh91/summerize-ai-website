@@ -63,10 +63,14 @@ const PrivacyPolicy = () => {
           <div className="mb-3">
             <h3 className="text-lg font-semibold text-purple-400 mb-1">Personal Communications</h3>
             <p className="mb-2">
-              If you activate the Extension on a page that contains emails, messages, or chat
-              transcripts, that text is treated the same as any other web page content — it is sent
-              to Anthropic for summarization and is not stored by us after the summary is returned.
-              Feedback messages you submit via our uninstall form are stored in Airtable.
+              We do <strong>not</strong> actively seek out, target, or retrieve personal communications.
+              The Extension only processes content on a page when you explicitly click the summarize
+              button. If the page you choose to summarize happens to contain emails, messages, or chat
+              transcripts (for example, if you are viewing your Gmail inbox in a browser tab and
+              manually trigger a summary), that text is processed the same as any other webpage content
+              — sent to Anthropic in real time and not stored by us after the summary is returned.
+              This is entirely user-initiated and depends on which page the user chooses to summarize.
+              Feedback messages voluntarily submitted via our uninstall form are stored in Airtable.
             </p>
           </div>
 
