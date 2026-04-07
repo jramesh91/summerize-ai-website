@@ -7,12 +7,12 @@ const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen overflow-x-hidden bg-[#0a0a0f]">
       <section className="container mx-auto p-6 py-14 max-w-4xl">
-        <div className="text-slate-100 leading-relaxed text-left">
+        <div className="text-white leading-relaxed text-left">
 
           <h1 className="text-4xl font-bold mb-2 text-white">Privacy Policy</h1>
           <p className="text-slate-400 mb-10">
-            <strong className="text-slate-100">Effective date:</strong> October 9, 2023 &nbsp;|&nbsp;{' '}
-            <strong className="text-slate-100">Last updated:</strong> April 7, 2026
+            <strong className="text-white">Effective date:</strong> October 9, 2023 &nbsp;|&nbsp;{' '}
+            <strong className="text-white">Last updated:</strong> April 7, 2026
           </p>
 
           {/* ── 1. Introduction ────────────────────────────────────────── */}
@@ -133,7 +133,7 @@ const PrivacyPolicy = () => {
 
             <div className="border border-white/10 rounded-lg p-4 bg-white/5">
               <h3 className="text-lg font-semibold text-white mb-2">Anthropic (Claude AI)</h3>
-              <ul className="list-disc pl-5 space-y-1 text-slate-100">
+              <ul className="list-disc pl-5 space-y-1 text-white">
                 <li><strong className="text-white">Data shared:</strong> Visible text content of web pages you choose to summarize.</li>
                 <li><strong className="text-white">Purpose:</strong> To generate AI summaries using Claude.</li>
                 <li><strong className="text-white">Stored by them:</strong> Subject to Anthropic's data retention policies.</li>
@@ -148,7 +148,7 @@ const PrivacyPolicy = () => {
 
             <div className="border border-white/10 rounded-lg p-4 bg-white/5">
               <h3 className="text-lg font-semibold text-white mb-2">Supabase</h3>
-              <ul className="list-disc pl-5 space-y-1 text-slate-100">
+              <ul className="list-disc pl-5 space-y-1 text-white">
                 <li><strong className="text-white">Data shared:</strong> User account data, authentication credentials, preferences, and summary history.</li>
                 <li><strong className="text-white">Purpose:</strong> Secure cloud database and authentication services.</li>
                 <li><strong className="text-white">Stored by them:</strong> US-based servers. Data retained until you delete your account.</li>
@@ -163,7 +163,7 @@ const PrivacyPolicy = () => {
 
             <div className="border border-white/10 rounded-lg p-4 bg-white/5">
               <h3 className="text-lg font-semibold text-white mb-2">Stripe</h3>
-              <ul className="list-disc pl-5 space-y-1 text-slate-100">
+              <ul className="list-disc pl-5 space-y-1 text-white">
                 <li><strong className="text-white">Data shared:</strong> Email address, billing metadata. Card and bank details are entered directly into Stripe's secure form and never pass through our servers.</li>
                 <li><strong className="text-white">Purpose:</strong> Payment processing and subscription management.</li>
                 <li><strong className="text-white">Stored by them:</strong> Stripe retains transaction records per their legal obligations.</li>
@@ -178,7 +178,7 @@ const PrivacyPolicy = () => {
 
             <div className="border border-white/10 rounded-lg p-4 bg-white/5">
               <h3 className="text-lg font-semibold text-white mb-2">Airtable</h3>
-              <ul className="list-disc pl-5 space-y-1 text-slate-100">
+              <ul className="list-disc pl-5 space-y-1 text-white">
                 <li><strong className="text-white">Data shared:</strong> Feedback messages and email addresses voluntarily submitted via our uninstall/feedback form.</li>
                 <li><strong className="text-white">Purpose:</strong> To store and manage user feedback submissions.</li>
                 <li><strong className="text-white">Stored by them:</strong> Retained for up to 2 years, then deleted.</li>
@@ -193,7 +193,7 @@ const PrivacyPolicy = () => {
 
             <div className="border border-white/10 rounded-lg p-4 bg-white/5">
               <h3 className="text-lg font-semibold text-white mb-2">Vercel Analytics</h3>
-              <ul className="list-disc pl-5 space-y-1 text-slate-100">
+              <ul className="list-disc pl-5 space-y-1 text-white">
                 <li><strong className="text-white">Data shared:</strong> Anonymized website usage data including page views, browser type, and approximate location derived from IP address.</li>
                 <li><strong className="text-white">Purpose:</strong> To understand how visitors use our Website.</li>
                 <li><strong className="text-white">Stored by them:</strong> Aggregated, anonymized data only.</li>
